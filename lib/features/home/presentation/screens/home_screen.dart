@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task8_chat_app/core/theme/app_colors.dart';
+import 'package:task8_chat_app/core/utils/app_strings.dart';
 import 'package:task8_chat_app/features/home/presentation/views/home_screen_body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -21,9 +22,30 @@ class HomeScreen extends StatelessWidget {
                 backgroundImage: AssetImage("assets/images/profile.png"),
               ),
             ),
-            const Text('Hoda Elkayal'),
+            const Text(
+              AppStrings.chats,
+              style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+            ),
           ],
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.camera_alt,
+              size: 28,
+              color: AppColors.darkGreyColor,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.edit_square,
+              size: 28,
+              color: AppColors.darkGreyColor,
+            ),
+          ),
+        ],
       ),
       body: const HomeScreenBody(),
     );
