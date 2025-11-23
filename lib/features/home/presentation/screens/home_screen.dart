@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
               backgroundColor: AppColors.blueColor,
               radius: 25,
               child: CircleAvatar(
-                radius: 21,
+                radius: 20,
                 backgroundImage: AssetImage("assets/images/profile.png"),
               ),
             ),
