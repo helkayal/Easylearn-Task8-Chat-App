@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task8_chat_app/features/home/presentation/screens/home_screen.dart';
+import 'package:task8_chat_app/core/theme/app_colors.dart';
+import 'package:task8_chat_app/features/splash/presentation/views/splash_screen_body.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -7,17 +8,8 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const HomeScreen()),
-            );
-          },
-          icon: const Icon(Icons.arrow_forward),
-        ),
-      ),
+      backgroundColor: AppColors.blueColor,
+      body: const SplashScreenBody(),
     );
   }
 }
