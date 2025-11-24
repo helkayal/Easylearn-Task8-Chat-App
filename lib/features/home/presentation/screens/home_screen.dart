@@ -9,7 +9,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.backgroundColor,
       appBar: AppBar(
+        backgroundColor: AppColors.backgroundColor,
         centerTitle: false,
         title: Row(
           spacing: 10,
@@ -29,23 +31,11 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.camera_alt,
-              size: 28,
-              color: AppColors.darkGreyColor,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.edit_square,
-              size: 28,
-              color: AppColors.darkGreyColor,
-            ),
-          ),
+          Icon(Icons.camera_alt, size: 28, color: AppColors.darkGreyColor),
+          SizedBox(width: 10),
+          Icon(Icons.edit_square, size: 28, color: AppColors.darkGreyColor),
         ],
+        actionsPadding: EdgeInsets.symmetric(horizontal: 20),
       ),
       body: const HomeScreenBody(),
     );

@@ -8,12 +8,12 @@ class SearchView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 10, left: 20, right: 20),
+      margin: const EdgeInsets.only(top: 10, left: 15, right: 10),
       padding: const EdgeInsets.symmetric(horizontal: 10),
       height: 50,
       decoration: BoxDecoration(
         color: AppColors.lightGreyColor,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(30),
       ),
       child: const Center(
         child: Row(
